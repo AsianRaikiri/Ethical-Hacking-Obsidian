@@ -25,4 +25,4 @@ But to create a SYN request in a Linux environment, the user will need sudo perm
 Since UDP Connections are inherently stateless, there is no acknowledgement from the server if a port is open or behind a firewall, if the request itself isn't an actual request. 
 nmap categorizes all request that get no response as open|filtered.
 If there is a ICMP Response, the port can be marked as closed and if there is any other response, then the port is considered as open.
-
+Normally nmap sends empty Requests, but for certain ports where certain services can be expected, it send basic requests for those services. 
